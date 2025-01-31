@@ -108,3 +108,14 @@ body {
     border-radius: 20px;
     padding: var(--spacing-300);
 }
+
+.header-img {
+    background-image: url('../images/illustration-article.svg');
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-body {
+    margin-top: var(--spacing-300);
+}
