@@ -13,7 +13,7 @@
 }
 
 /* TYPOGRAPHY -------------------------------------------------------------------------------- */
-.figtree-extra-bold-twenty-four {
+.figtree-extra-bold-preset-one{
     font-family: "Figtree", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -23,17 +23,7 @@
     letter-spacing: 0px;
 }
 
-.figtree-extra-bold-fourteen {
-    font-family: "Figtree", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px;
-}
-
-.figtree-medium-sixteen {
+.figtree-medium-preset-two {
     font-family: "Figtree", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -43,7 +33,7 @@
     letter-spacing: 0px;
 }
 
-.figtree-medium-fourteen {
+.figtree-medium-preset-three {
     font-family: "Figtree", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -53,6 +43,15 @@
     letter-spacing: 0px;
 }
 
+.figtree-extra-bold-preset-three {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
 /* CSS RESET  -------------------------------------------------------------------------------- */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -84,13 +83,13 @@
   }
   /* 8. Improve line wrapping */
   p {
-    text-wrap: pretty;
+    text-wrap:stable;
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: var(--spacing-150); }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
@@ -103,10 +102,12 @@ body {
 
 .card {
     width: 384px;
-    height: 522px;
+    height: 537px;
     background-color: var(--clr-white);
     border-radius: 20px;
     padding: var(--spacing-300);
+    box-shadow: 8px 8px 0 0;
+    border: 1px solid var(--clr-gray-950);
 }
 
 .header-img {
@@ -118,4 +119,43 @@ body {
 
 .card-body {
     margin-top: var(--spacing-300);
+    color: var(--clr-gray-950);
+    width: 100%;
+}
+
+.category {
+    padding: var(--spacing-50) var(--spacing-150);
+    background-color: var(--clr-yellow);
+    color: var(--clr-gray-950);
+    display: inline-block;
+    border-radius: var(--spacing-50);
+}
+
+.publish-date,
+.title,
+.description{
+    margin-top: var(--spacing-150);
+}
+
+.description {
+    color: var(--clr-gray-500);
+}
+
+.card-footer {
+    margin-top: var(--spacing-300);
+    display: flex;
+    justify-items: left;
+    align-items: center;
+}
+
+.author-img {
+    background-image: url('../images/image-avatar.webp');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.author-name {
+    margin-left: var(--spacing-150);
 }
