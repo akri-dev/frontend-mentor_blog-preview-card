@@ -1,0 +1,96 @@
+/* CSS CUSTOM PROPERTIES -------------------------------------------------------------------------------- */
+:root {
+    --clr-white: #FFFFFF;
+    --clr-yellow: #F4D04E;
+
+    --clr-gray-950: #111111;
+    --clr-gray-500: #6B6B6B;
+
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+/* TYPOGRAPHY -------------------------------------------------------------------------------- */
+.figtree-extra-bold-twenty-four {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.figtree-extra-bold-fourteen {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.figtree-medium-sixteen {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.figtree-medium-fourteen {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+/* CSS RESET  -------------------------------------------------------------------------------- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
