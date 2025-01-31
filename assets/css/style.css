@@ -165,3 +165,8 @@ body {
 .author-name {
     margin-left: var(--spacing-150);
 }
+
+.title:hover {
+  color: var(--clr-yellow);
+  cursor: pointer;
+}
