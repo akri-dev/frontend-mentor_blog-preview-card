@@ -90,7 +90,21 @@
     text-wrap: balance;
   }
 
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: var(--clr-yellow);
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 384px;
+    height: 522px;
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    padding: var(--spacing-300);
+}
